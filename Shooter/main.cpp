@@ -43,17 +43,17 @@ void main() {
 		//cout << (int)key << "\t" << key << endl;
 		switch (key)
 		{
-		case 'w': cout << "Вперед" << endl; break;
+		case UpArrow:
+		case 'w': 
 		case 'W': cout << "Вперед" << endl; break;
-		case UpArrow: cout << "Вперед" << endl; break;
-		case 's': cout << "Назад" << endl; break;
-		case DownArrow: cout << "Назад" << endl; break;
+		case DownArrow: 
+		case 's': 
 		case 'S': cout << "Назад" << endl; break;
-		case 'a': cout << "Налево" << endl; break;
-		case LeftArrow: cout << "Налево" << endl; break;
+		case LeftArrow: 
+		case 'a': 
 		case 'A': cout << "Налево" << endl; break;
-		case 'd': cout << "Направо" << endl; break;
-		case RightArrow: cout << "Направо" << endl; break;
+		case RightArrow: 
+		case 'd': 
 		case 'D': cout << "Направо" << endl; break;
 		case ' ': cout << "Прыжок" << endl; break;
 		case -32: break;
