@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include<conio.h>
 using namespace std;
 
@@ -21,15 +21,15 @@ void main() {
 	cout << "Shooter" << endl;
 	char key;
 	do {
-		key = _getch(); //îæèäàåò ââîä è âîçâðàùàåò àñêè êîä
+		key = _getch(); //Ð¾Ð¶Ð¸Ð´Ð°ÐµÑ‚ Ð²Ð²Ð¾Ð´ Ð¸ Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ Ð°ÑÐºÐ¸ ÐºÐ¾Ð´
 		//cout << (int)key << "\t" << key << endl;
 
-		if (key == 'w' || key == 'W' || key == UpArrow)cout << "Âïåðåä" << endl;
-		else if (key == 's' || key == 'S' || key == DownArrow)cout << "Íàçàä" << endl;
-		else if (key == 'a' || key == 'A' || key == LeftArrow)cout << "Âëåâî" << endl;
-		else if (key == 'd' || key == 'D' || key == RightArrow)cout << "Âïðàâî" << endl;
-		else if (key == ' ')cout << "Ïðûæîê" << endl;
-		else if (key == Enter)cout << "Îãîíü" << endl;
+		if (key == 'w' || key == 'W' || key == UpArrow)cout << "Ð’Ð¿ÐµÑ€ÐµÐ´" << endl;
+		else if (key == 's' || key == 'S' || key == DownArrow)cout << "ÐÐ°Ð·Ð°Ð´" << endl;
+		else if (key == 'a' || key == 'A' || key == LeftArrow)cout << "Ð’Ð»ÐµÐ²Ð¾" << endl;
+		else if (key == 'd' || key == 'D' || key == RightArrow)cout << "Ð’Ð¿Ñ€Ð°Ð²Ð¾" << endl;
+		else if (key == ' ')cout << "ÐŸÑ€Ñ‹Ð¶Ð¾Ðº" << endl;
+		else if (key == Enter)cout << "ÐžÐ³Ð¾Ð½ÑŒ" << endl;
 		else if (key != -32 && key != Escape)cout << "Error" << endl;
 
 	} while (key != Escape);
@@ -43,12 +43,12 @@ void main() {
 		//cout << (int)key << "\t" << key << endl;
 		switch (key)
 		{
-		case 'w': cout << "Âïåðåä" << endl; break;
-		case 's': cout << "Íàçàä" << endl; break;
-		case 'a': cout << "Íàëåâî" << endl; break;
-		case 'd': cout << "Íàïðàâî" << endl; break;
-		case ' ': cout << "Ïðûæîê" << endl; break;
-		case Enter: cout << "Îãîíü" << endl; break;
+		case 'w': cout << "Ð’Ð¿ÐµÑ€ÐµÐ´" << endl; break;
+		case 's': cout << "ÐÐ°Ð·Ð°Ð´" << endl; break;
+		case 'a': cout << "ÐÐ°Ð»ÐµÐ²Ð¾" << endl; break;
+		case 'd': cout << "ÐÐ°Ð¿Ñ€Ð°Ð²Ð¾" << endl; break;
+		case ' ': cout << "ÐŸÑ€Ñ‹Ð¶Ð¾Ðº" << endl; break;
+		case Enter: cout << "ÐžÐ³Ð¾Ð½ÑŒ" << endl; break;
 
 		default:
 			cout << "Error" << endl;
