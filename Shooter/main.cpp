@@ -44,10 +44,20 @@ void main() {
 		switch (key)
 		{
 		case 'w': cout << "Вперед" << endl; break;
+		case 'W': cout << "Вперед" << endl; break;
+		case UpArrow: cout << "Вперед" << endl; break;
 		case 's': cout << "Назад" << endl; break;
+		case DownArrow: cout << "Назад" << endl; break;
+		case 'S': cout << "Назад" << endl; break;
 		case 'a': cout << "Налево" << endl; break;
+		case LeftArrow: cout << "Налево" << endl; break;
+		case 'A': cout << "Налево" << endl; break;
 		case 'd': cout << "Направо" << endl; break;
+		case RightArrow: cout << "Направо" << endl; break;
+		case 'D': cout << "Направо" << endl; break;
 		case ' ': cout << "Прыжок" << endl; break;
+		case -32: break;
+		case Escape:cout << "Выход";
 		case Enter: cout << "Огонь" << endl; break;
 
 		default:
