@@ -41,5 +41,7 @@ void main() {
 		case '/': cout << a << " / " << b << " = " << a / b << endl; break;
 		default: cout << "Error: No operation" << endl;
 		}
+		cout << a << s << b << "=" << a << endl;
+
 	} while (1);
 	}
