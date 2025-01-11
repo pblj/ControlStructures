@@ -10,7 +10,7 @@ using namespace std;
 #define LeftArrow 75
 #define RightArrow 77
 
-#define IF_ELSE
+//#define IF_ELSE
 
 void main() {
 
@@ -23,13 +23,13 @@ void main() {
 	do {
 		key = _getch(); //ожидает ввод и возвращает аски код
 		//cout << (int)key << "\t" << key << endl;
-		
+
 		if (key == 'w' || key == 'W' || key == UpArrow)cout << "Вперед" << endl;
 		else if (key == 's' || key == 'S' || key == DownArrow)cout << "Назад" << endl;
 		else if (key == 'a' || key == 'A' || key == LeftArrow)cout << "Влево" << endl;
 		else if (key == 'd' || key == 'D' || key == RightArrow)cout << "Вправо" << endl;
 		else if (key == ' ')cout << "Прыжок" << endl;
-		else if(key == Enter)cout << "Огонь" << endl;
+		else if (key == Enter)cout << "Огонь" << endl;
 		else if (key != -32 && key != Escape)cout << "Error" << endl;
 
 	} while (key != Escape);
@@ -40,7 +40,19 @@ void main() {
 
 	do {
 		key = _getch();
-		cout << (int)key << "\t" << key << endl;
+		//cout << (int)key << "\t" << key << endl;
+		switch (key)
+		{
+		case 'w': cout << "Вперед" << endl; break;
+		case 's': cout << "Назад" << endl; break;
+		case 'a': cout << "Налево" << endl; break;
+		case 'd': cout << "Направо" << endl; break;
+		case ' ': cout << "Прыжок" << endl; break;
+		case Enter: cout << "Огонь" << endl; break;
+
+		default:
+			cout << "Error" << endl;
+		}
 
 	} while (key != Escape);
 }
