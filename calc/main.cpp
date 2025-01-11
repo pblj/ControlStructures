@@ -42,6 +42,6 @@ void main() {
 		default: cout << "Error: No operation" << endl;
 		}
 		cout << a << s << b << "=" << a << endl;
-
+		cout << a;
 	} while (1);
 	}
