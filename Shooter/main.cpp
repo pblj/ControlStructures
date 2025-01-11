@@ -2,8 +2,6 @@
 #include<conio.h>
 using namespace std;
 
-#define IF_ELSE
-
 #define Enter 13
 #define Escape 27
 
@@ -11,6 +9,8 @@ using namespace std;
 #define DownArrow 80
 #define LeftArrow 75
 #define RightArrow 77
+
+#define IF_ELSE
 
 void main() {
 
@@ -35,4 +35,12 @@ void main() {
 	} while (key != Escape);
 
 #endif
+
+	char key;
+
+	do {
+		key = _getch();
+		cout << (int)key << "\t" << key << endl;
+
+	} while (key != Escape);
 }
