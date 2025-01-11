@@ -2,6 +2,9 @@
 #include<conio.h>
 using namespace std;
 
+#define Enter 13
+#define Escape 27
+
 void main() {
 
 	setlocale(LC_ALL, "");
@@ -16,8 +19,8 @@ void main() {
 		else if (key == 'a')cout << "Влево" << endl;
 		else if (key == 'd')cout << "Вправо" << endl;
 		else if (key == ' ')cout << "Прыжок" << endl;
-		else if(key == 13)cout << "Огонь" << endl;
+		else if(key == Enter)cout << "Огонь" << endl;
 		else cout << "Error" << endl;
 
-	} while (key != 27);
+	} while (key != Escape);
 }
