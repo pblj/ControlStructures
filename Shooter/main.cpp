@@ -5,6 +5,11 @@ using namespace std;
 #define Enter 13
 #define Escape 27
 
+#define UpArrow 72
+#define DownArrow 80
+#define LeftArrow 75
+#define RightArrow 77
+
 void main() {
 
 	setlocale(LC_ALL, "");
