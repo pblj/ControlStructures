@@ -2,6 +2,8 @@
 #include<conio.h>
 using namespace std;
 
+#define IF_ELSE
+
 #define Enter 13
 #define Escape 27
 
@@ -13,6 +15,9 @@ using namespace std;
 void main() {
 
 	setlocale(LC_ALL, "");
+
+#ifdef IF_ELSE
+
 	cout << "Shooter" << endl;
 	char key;
 	do {
@@ -28,4 +33,6 @@ void main() {
 		else if (key != -32 && key != Escape)cout << "Error" << endl;
 
 	} while (key != Escape);
+
+#endif
 }
