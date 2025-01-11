@@ -8,8 +8,8 @@ void main() {
 	cout << "Shooter" << endl;
 	char key;
 	do {
-		key = _getch();
+		key = _getch(); //ожидает ввод и возвращает аски код
 		cout << (int)key << "\t" << key << endl;
 
-	} while (true);
+	} while (key != 27);
 }
