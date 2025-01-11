@@ -35,10 +35,10 @@ void main() {
 		cin >> s >> b;
 		switch (s)
 		{
-		case '+': cout << a << " + " << b << " = " << a + b << endl; break;
-		case '-': cout << a << " - " << b << " = " << a - b << endl; break;
-		case '*': cout << a << " * " << b << " = " << a * b << endl; break;
-		case '/': cout << a << " / " << b << " = " << a / b << endl; break;
+		case '+':  a += b; break;
+		case '-':  a -= b; break;
+		case '*':  a *= b; break;
+		case '/':  a /= b; break;
 		default: cout << "Error: No operation" << endl;
 		}
 		cout << a << s << b << "=" << a << endl;
