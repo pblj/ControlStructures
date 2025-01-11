@@ -8,7 +8,7 @@ void main() {
 	double a, b;
 	char s;
 	cout << "¬ведите простое арифметическое выражение: ";
-	cin >> a >> s >> b;
+	cin >> a;
 
 #ifdef CALC_IF
 	if (s == '+')
@@ -31,14 +31,15 @@ void main() {
 	}
 #endif // CALC_IF
 
-	switch (s)
-	{
-	case '+': cout << a << " + " << b << " = " << a + b << endl; break;
-	case '-': cout << a << " - " << b << " = " << a - b << endl; break;
-	case '*': cout << a << " * " << b << " = " << a * b << endl; break;
-	case '/': cout << a << " / " << b << " = " << a / b << endl; break;
-	default: cout << "Error: No operation" << endl;
-
+	do {
+		cin >> s >> b;
+		switch (s)
+		{
+		case '+': cout << a << " + " << b << " = " << a + b << endl; break;
+		case '-': cout << a << " - " << b << " = " << a - b << endl; break;
+		case '*': cout << a << " * " << b << " = " << a * b << endl; break;
+		case '/': cout << a << " / " << b << " = " << a / b << endl; break;
+		default: cout << "Error: No operation" << endl;
+		}
+	} while (1);
 	}
-
-}
