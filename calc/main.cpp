@@ -41,7 +41,8 @@ void main() {
 		case '/':  a /= b; break;
 		default: cout << "Error: No operation" << endl;
 		}
-		cout << a << s << b << "=" << a << endl;
+		//cout << a << s << b << "=" << a << endl;
+		cout << " = ";
 		cout << a;
 	} while (1);
 	}
