@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 //#define SQUARE
 //#define triangle
@@ -13,7 +13,7 @@ void main() {
 
 #ifdef SQUARE
 	cout << "Geometry" << endl;
-	cout << "Ââåäèòå ðàçìåð êâàäðàòà:"; cin >> d;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð°:"; cin >> d;
 
 	for (int i = 0; i < d; i++)
 	{
@@ -27,7 +27,7 @@ void main() {
 
 #ifdef triangle
 	cout << "Geometry" << endl;
-	cout << "Ââåäèòå ðàçìåð êâàäðàòà:"; cin >> d;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð°:"; cin >> d;
 
 	for (int i = 0; i < d; i++)
 	{
@@ -42,7 +42,7 @@ void main() {
 #ifdef REVERSE_TRIANGLE
 
 	cout << "Geometry" << endl;
-	cout << "Ââåäèòå ðàçìåð êâàäðàòà:"; cin >> d;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð°:"; cin >> d;
 
 	for (int i = 0; i < d; i++)
 	{
@@ -58,7 +58,7 @@ void main() {
 #ifdef MIRROR_TRIANGLE
 
 	cout << "Geometry" << endl;
-	cout << "Ââåäèòå ðàçìåð êâàäðàòà:"; cin >> d;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð°:"; cin >> d;
 
 	for (int i = 1; i <= d; i++)
 	{
@@ -77,7 +77,7 @@ void main() {
 #ifdef MIRROR_TRIANGLE_REVERSE
 
 	cout << "Geometry" << endl;
-	cout << "Ââåäèòå ðàçìåð êâàäðàòà:"; cin >> d;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð°:"; cin >> d;
 
 	for (int i = 1; i <= d; i++)
 	{
