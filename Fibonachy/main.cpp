@@ -1,7 +1,8 @@
 ﻿#include <iostream>
+#include "main.h"
 using namespace std;
 //#define FibonacciSeries
-#define FibonacciCountNumber
+//#define FibonacciCountNumber
 #define SimpleSeries
 
 void main() {
@@ -53,12 +54,20 @@ void main() {
 
 	cout << "Введите предел для ряда простых чисел!"; cin >> limit;
 
-	for (int i = 0; i < limit; i++) {
+	for (int i = 0; i <= limit; i++) {
 
-		if (i)
+		if (isPrime(i)) {
+			cout << i;
+		}
 
 	}
 
 #endif // SimpleSeries
 
+}
+
+ bool isPrime(int n) {
+	for (int i = 2; i * i <= n; i++)
+		if (n % i == 0) return false;
+	return true;
 }
