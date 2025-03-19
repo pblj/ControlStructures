@@ -52,22 +52,21 @@ void main() {
 
 	int limit = 0;
 
-	cout << "Введите предел для ряда простых чисел!"; cin >> limit;
+	cout << "Введите предел для ряда простых чисел:"; cin >> limit;
 
 	for (int i = 0; i <= limit; i++) {
 
 		if (isPrime(i)) {
-			cout << i;
+			cout << i; cout << endl;
 		}
 
 	}
-
-#endif // SimpleSeries
-
 }
 
  bool isPrime(int n) {
-	for (int i = 2; i * i <= n; i++)
+	if (n % 2 == 0)return false;
+	for (int i = 3; i * i <= n; i+=2)
 		if (n % i == 0) return false;
 	return true;
 }
+#endif // SimpleSeries
