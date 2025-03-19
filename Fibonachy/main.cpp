@@ -3,7 +3,8 @@
 using namespace std;
 //#define FibonacciSeries
 //#define FibonacciCountNumber
-#define SimpleSeries
+//#define SimpleSeries
+#define PerfectSeries
 
 void main() {
 
@@ -11,7 +12,7 @@ void main() {
 
 #ifdef FibonacciSeries
 
-	int limit = 0, number = 1,f1 = 0,f2 = 1;
+	int limit = 0, number = 1, f1 = 0, f2 = 1;
 
 	cout << "Введите предел для ряда Фибоначчи:";
 	cin >> limit;
@@ -63,10 +64,28 @@ void main() {
 	}
 }
 
- bool isPrime(int n) {
+bool isPrime(int n) {
 	if (n % 2 == 0)return false;
-	for (int i = 3; i * i <= n; i+=2)
+	for (int i = 3; i * i <= n; i += 2)
 		if (n % i == 0) return false;
 	return true;
 }
 #endif // SimpleSeries
+
+#ifdef PerfectSeries
+
+int inputNumber, chekedNumber;
+cout << "Введите предел последовательности совершенных чисел: "; cin >> inputNumber;
+
+for (int i = 1; i <= inputNumber; i++) {
+
+	chekedNumber = 0;
+	for (int k = 1; k <= i; k++) {
+		if ((i != k) && (i % k == 0)) chekedNumber += k;
+	}
+
+	if (chekedNumber == i) { cout << chekedNumber; cout << endl; }
+}
+
+#endif // PerfectSeries
+}
