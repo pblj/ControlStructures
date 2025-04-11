@@ -211,16 +211,19 @@ void main() {
 
 	for (int i = 0; i < d; i++)
 	{
-		for (int j = 0; j < d; j++)
+		for (int l = 0; l < d; l++)
 		{
-			if (i % 2 == 0) {
-				printSquareLine(d, "*");
+			for (int j = 0; j < d; j++)
+			{
+				if ((j + i) % 2 == 0) {
+					printSquareLine(d, "*");
+				}
+				else {
+					printSquareLine(d, " ");
+				}
 			}
-			else {
-				printSquareLine(d, " ");
-			}
+			cout << endl;
 		}
-		cout << endl;
 	}
 
 #endif
